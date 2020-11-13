@@ -1,0 +1,123 @@
+
+(rules PCB ILI2511-N7
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 379)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 100.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 25.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_500:400_um"
+    (shape
+      (circle F.Cu 500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_500:400_um" "Via[0-1]_500:400_um" default
+  )
+  (via 
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_500:400_um-kicad_default" "Via[0-1]_500:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_500:400_um-RxTx" "Via[0-1]_500:400_um" RxTx
+  )
+  (via 
+    "Via[0-1]_600:400_um-RxTx" "Via[0-1]_600:400_um" RxTx
+  )
+  (via_rule
+    default "Via[0-1]_500:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_500:400_um-kicad_default"
+  )
+  (via_rule
+    RxTx "Via[0-1]_500:400_um-RxTx"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C1-Pad2)" GND "Net-(C2-Pad2)" "Net-(C4-Pad1)" "Net-(C5-Pad2)" "Net-(C5-Pad1)" "Net-(C6-Pad2)" "Net-(C6-Pad1)"
+    "Net-(C7-Pad2)" "Net-(C7-Pad1)" "Net-(C8-Pad1)" "Net-(C9-Pad2)" "Net-(C10-Pad2)" "Net-(C11-Pad2)" "/I2C_RST" /3V3
+    /VUSB "Net-(J1-Pad32)" "Net-(J1-PadMP1)" "Net-(J1-PadMP2)" "Net-(J2-Pad2)" "Net-(J2-PadMP1)" "Net-(J2-PadMP2)" "/I2C_SCL"
+    "/I2C_SDA" "/I2C_INT" "Net-(J4-PadB5)" "Net-(J4-PadA5)" "Net-(U1-Pad83)" "Net-(U1-Pad43)" "Net-(U1-Pad42)" "Net-(U1-Pad41)"
+    "Net-(U1-Pad40)" "Net-(U1-Pad39)" "Net-(U1-Pad38)" "Net-(U1-Pad37)" "Net-(U2-Pad4)" "Net-(Y1-Pad2)" "Net-(Y1-Pad4)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class RxTx
+    "Net-(C3-Pad2)" /TX5 /TX4 /TX3 /TX2 /TX1 /RX22 /RX21
+    /RX20 /RX19 /RX18 /RX17 /RX16 /RX15 /RX14 /RX13
+    /RX12 /RX11 /RX10 /RX9 /RX8 /RX7 /RX6 /RX5
+    /RX4 /RX3 /RX2 /RX1 /TX36 /TX35 /TX34 /TX33
+    /TX32 /TX31 /TX30 /TX29 /TX28 /TX27 /TX26 /TX25
+    /TX24 /TX23 /TX22 /TX21 /TX20 /TX19 /TX18 /TX17
+    /TX16 /TX15 /TX14 /TX13 /TX12 /TX11 /TX10 /TX9
+    /TX8 /TX7 /TX6 /D+ "/D-" "Net-(U1-Pad13)" "Net-(U1-Pad12)" "/USB_D+"
+    "/USB_D-"
+    (clearance_class RxTx)
+    (via_rule RxTx)
+    (rule
+      (width 100.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

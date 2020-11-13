@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name IC_pretty)(type KiCad)(uri ${KIPRJMOD}/kicad-libs/IC.pretty)(options "")(descr ""))
+  (lib (name Connectors_pretty)(type KiCad)(uri ${KIPRJMOD}/kicad-libs/Connectors.pretty)(options "")(descr ""))
+  (lib (name Graphics)(type KiCad)(uri ${KIPRJMOD}/kicad-libs/Graphics.pretty)(options "")(descr ""))
+)
