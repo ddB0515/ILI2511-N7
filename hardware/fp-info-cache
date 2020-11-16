@@ -1,4 +1,4 @@
-18999224914031502
+19000826624538685
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -46956,6 +46956,13 @@ Connector
 38
 38
 Connectors_pretty
+KMR621NG
+push switch
+
+0
+4
+2
+Connectors_pretty
 Molex-5025983393
 Molex-502598-3393
 Connector
@@ -51652,13 +51659,6 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
-Graphics
-cat-logo
-
-
-0
-0
-0
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -51785,6 +51785,13 @@ ILITEK-2511
 0
 104
 89
+IC_pretty
+TPS6518x
+
+
+0
+74
+50
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
