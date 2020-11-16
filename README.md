@@ -2,6 +2,9 @@
 
 Nexus 7(2nd gen) touch controller board based on Ilitek 2511 (only USB and I2C is supported)
 
+# Interactive BOM
+[Interactive BOM](http://htmlpreview.github.io/?https://raw.githubusercontent.com/ddB0515/ILI2511-N7/master/hardware/bom/ibom.html)
+
 ![Front Photo](ILI2511-N7-front.png "Front Photo")
 
 ## Revisions
