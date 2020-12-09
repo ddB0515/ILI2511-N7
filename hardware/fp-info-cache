@@ -1,4 +1,4 @@
-19000831572006502
+19004043415640502
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -46963,6 +46963,13 @@ Connector
 35
 35
 Connectors_pretty
+KMR621NG
+push switch
+
+0
+4
+2
+Connectors_pretty
 Molex-5025983393
 Molex-502598-3393
 Connector
@@ -51792,6 +51799,13 @@ ILITEK-2511
 0
 104
 89
+IC_pretty
+TPS6518x
+
+
+0
+74
+50
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
